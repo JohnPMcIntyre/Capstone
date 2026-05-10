@@ -33,6 +33,7 @@
             numReps = new NumericUpDown();
             numWeight = new NumericUpDown();
             btnSave = new Button();
+            lblMcIntyre = new Label();
             ((System.ComponentModel.ISupportInitialize)numSets).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numReps).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numWeight).BeginInit();
@@ -40,52 +41,71 @@
             // 
             // txtExerciseName
             // 
-            txtExerciseName.Location = new Point(83, 66);
+            txtExerciseName.Location = new Point(95, 88);
+            txtExerciseName.Margin = new Padding(3, 4, 3, 4);
             txtExerciseName.Name = "txtExerciseName";
-            txtExerciseName.Size = new Size(185, 23);
+            txtExerciseName.Size = new Size(211, 27);
             txtExerciseName.TabIndex = 0;
             // 
             // numSets
             // 
-            numSets.Location = new Point(83, 107);
+            numSets.Location = new Point(95, 143);
+            numSets.Margin = new Padding(3, 4, 3, 4);
             numSets.Name = "numSets";
-            numSets.Size = new Size(120, 23);
+            numSets.Size = new Size(137, 27);
             numSets.TabIndex = 1;
             // 
             // numReps
             // 
-            numReps.Location = new Point(83, 136);
+            numReps.Location = new Point(95, 181);
+            numReps.Margin = new Padding(3, 4, 3, 4);
             numReps.Name = "numReps";
-            numReps.Size = new Size(120, 23);
+            numReps.Size = new Size(137, 27);
             numReps.TabIndex = 2;
             // 
             // numWeight
             // 
-            numWeight.Location = new Point(83, 165);
+            numWeight.Location = new Point(95, 220);
+            numWeight.Margin = new Padding(3, 4, 3, 4);
             numWeight.Name = "numWeight";
-            numWeight.Size = new Size(120, 23);
+            numWeight.Size = new Size(137, 27);
             numWeight.TabIndex = 3;
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(83, 194);
+            btnSave.Location = new Point(95, 259);
+            btnSave.Margin = new Padding(3, 4, 3, 4);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(120, 23);
+            btnSave.Size = new Size(137, 31);
             btnSave.TabIndex = 4;
             btnSave.Text = "Save Changes";
             btnSave.UseVisualStyleBackColor = true;
             btnSave.Click += btnSave_Click;
             // 
+            // lblMcIntyre
+            // 
+            lblMcIntyre.AutoSize = true;
+            lblMcIntyre.Font = new Font("Showcard Gothic", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblMcIntyre.ForeColor = Color.RoyalBlue;
+            lblMcIntyre.Location = new Point(12, 9);
+            lblMcIntyre.Name = "lblMcIntyre";
+            lblMcIntyre.Size = new Size(380, 50);
+            lblMcIntyre.TabIndex = 7;
+            lblMcIntyre.Text = "McIntyre Fitness";
+            // 
             // WorkoutEditForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(420, 297);
+            BackColor = Color.DimGray;
+            ClientSize = new Size(480, 396);
+            Controls.Add(lblMcIntyre);
             Controls.Add(btnSave);
             Controls.Add(numWeight);
             Controls.Add(numReps);
             Controls.Add(numSets);
             Controls.Add(txtExerciseName);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "WorkoutEditForm";
             Text = "WorkoutEditForm";
             ((System.ComponentModel.ISupportInitialize)numSets).EndInit();
@@ -102,5 +122,6 @@
         private NumericUpDown numReps;
         private NumericUpDown numWeight;
         private Button btnSave;
+        private Label lblMcIntyre;
     }
 }

@@ -3,32 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|c:\\users\\john.mcintyre\\gcu_capstone\\mcintyresfitnessapp\\services\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|solutionrelative:services\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|c:\\users\\john.mcintyre\\gcu_capstone\\mcintyresfitnessapp\\forms\\workouthistoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|solutionrelative:forms\\workouthistoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|c:\\users\\john.mcintyre\\gcu_capstone\\mcintyresfitnessapp\\services\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|solutionrelative:services\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|c:\\users\\john.mcintyre\\gcu_capstone\\mcintyresfitnessapp\\forms\\workouthistoryform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|solutionrelative:forms\\workouthistoryform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|c:\\users\\john.mcintyre\\gcu_capstone\\mcintyresfitnessapp\\forms\\workoutform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|solutionrelative:forms\\workoutform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|c:\\users\\john.mcintyre\\gcu_capstone\\mcintyresfitnessapp\\forms\\workoutform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|solutionrelative:forms\\workoutform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|c:\\users\\john.mcintyre\\gcu_capstone\\mcintyresfitnessapp\\forms\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|solutionrelative:forms\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|c:\\users\\john.mcintyre\\gcu_capstone\\mcintyresfitnessapp\\forms\\workouteditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|solutionrelative:forms\\workouteditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|c:\\users\\john.mcintyre\\gcu_capstone\\mcintyresfitnessapp\\forms\\workouthistoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|solutionrelative:forms\\workouthistoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|c:\\users\\john.mcintyre\\gcu_capstone\\mcintyresfitnessapp\\forms\\progressform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|solutionrelative:forms\\progressform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|c:\\users\\john.mcintyre\\gcu_capstone\\mcintyresfitnessapp\\forms\\workouteditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|solutionrelative:forms\\workouteditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|c:\\users\\john.mcintyre\\gcu_capstone\\mcintyresfitnessapp\\forms\\progressform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|solutionrelative:forms\\progressform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|c:\\users\\john.mcintyre\\gcu_capstone\\mcintyresfitnessapp\\forms\\progressform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|solutionrelative:forms\\progressform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|c:\\users\\john.mcintyre\\gcu_capstone\\mcintyresfitnessapp\\forms\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|solutionrelative:forms\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|c:\\users\\john.mcintyre\\gcu_capstone\\mcintyresfitnessapp\\forms\\dashboardform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|solutionrelative:forms\\dashboardform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|c:\\users\\john.mcintyre\\gcu_capstone\\mcintyresfitnessapp\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|solutionrelative:forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|c:\\users\\john.mcintyre\\gcu_capstone\\mcintyresfitnessapp\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|c:\\users\\john.mcintyre\\gcu_capstone\\mcintyresfitnessapp\\forms\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11C03D90-5850-47C4-B854-DB24E3D0F6AD}|McIntyresFitnessApp.csproj|solutionrelative:forms\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,98 +57,139 @@
           "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WorkoutForm.cs",
-              "DocumentMoniker": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\WorkoutForm.cs",
-              "RelativeDocumentMoniker": "Forms\\WorkoutForm.cs",
-              "ToolTip": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\WorkoutForm.cs",
-              "RelativeToolTip": "Forms\\WorkoutForm.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "WorkoutHistoryForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\WorkoutHistoryForm.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\WorkoutHistoryForm.Designer.cs",
+              "ToolTip": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\WorkoutHistoryForm.Designer.cs",
+              "RelativeToolTip": "Forms\\WorkoutHistoryForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T20:58:33.964Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProgressForm.cs",
-              "DocumentMoniker": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\ProgressForm.cs",
-              "RelativeDocumentMoniker": "Forms\\ProgressForm.cs",
-              "ToolTip": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\ProgressForm.cs",
-              "RelativeToolTip": "Forms\\ProgressForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T20:41:46.507Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "WorkoutEditForm.cs",
-              "DocumentMoniker": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\WorkoutEditForm.cs",
-              "RelativeDocumentMoniker": "Forms\\WorkoutEditForm.cs",
-              "ToolTip": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\WorkoutEditForm.cs",
-              "RelativeToolTip": "Forms\\WorkoutEditForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T20:33:24.992Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserSession.cs",
-              "DocumentMoniker": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Services\\UserSession.cs",
-              "RelativeDocumentMoniker": "Services\\UserSession.cs",
-              "ToolTip": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Services\\UserSession.cs",
-              "RelativeToolTip": "Services\\UserSession.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T18:56:02.795Z",
+              "WhenOpened": "2026-05-10T21:02:45.672Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "WorkoutHistoryForm.cs",
-              "DocumentMoniker": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\WorkoutHistoryForm.cs",
-              "RelativeDocumentMoniker": "Forms\\WorkoutHistoryForm.cs",
-              "ToolTip": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\WorkoutHistoryForm.cs",
-              "RelativeToolTip": "Forms\\WorkoutHistoryForm.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAcwGEAAAAAAAAAAAAAAA==",
+              "Title": "ProgressForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\ProgressForm.cs",
+              "RelativeDocumentMoniker": "Forms\\ProgressForm.cs",
+              "ToolTip": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\ProgressForm.cs [Design]",
+              "RelativeToolTip": "Forms\\ProgressForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T18:39:28.349Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-10T21:00:26.669Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DashboardForm.cs",
-              "DocumentMoniker": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\DashboardForm.cs",
-              "RelativeDocumentMoniker": "Forms\\DashboardForm.cs",
-              "ToolTip": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\DashboardForm.cs",
-              "RelativeToolTip": "Forms\\DashboardForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
+              "Title": "WorkoutEditForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\WorkoutEditForm.cs",
+              "RelativeDocumentMoniker": "Forms\\WorkoutEditForm.cs",
+              "ToolTip": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\WorkoutEditForm.cs [Design]",
+              "RelativeToolTip": "Forms\\WorkoutEditForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T16:44:38.464Z",
+              "WhenOpened": "2026-05-10T21:02:02.853Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WorkoutForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\WorkoutForm.cs",
+              "RelativeDocumentMoniker": "Forms\\WorkoutForm.cs",
+              "ToolTip": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\WorkoutForm.cs [Design]",
+              "RelativeToolTip": "Forms\\WorkoutForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T21:02:23.795Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WorkoutHistoryForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\WorkoutHistoryForm.cs",
+              "RelativeDocumentMoniker": "Forms\\WorkoutHistoryForm.cs",
+              "ToolTip": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\WorkoutHistoryForm.cs [Design]",
+              "RelativeToolTip": "Forms\\WorkoutHistoryForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T21:02:48.384Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProgressForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\ProgressForm.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\ProgressForm.Designer.cs",
+              "ToolTip": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\ProgressForm.Designer.cs",
+              "RelativeToolTip": "Forms\\ProgressForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T21:00:24.633Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DatabaseHelper.cs",
-              "DocumentMoniker": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Services\\DatabaseHelper.cs",
-              "RelativeDocumentMoniker": "Services\\DatabaseHelper.cs",
-              "ToolTip": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Services\\DatabaseHelper.cs",
-              "RelativeToolTip": "Services\\DatabaseHelper.cs",
-              "ViewState": "AgIAAMkAAAAAAAAAAAAkwBUAAABCAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "DashboardForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\DashboardForm.cs",
+              "RelativeDocumentMoniker": "Forms\\DashboardForm.cs",
+              "ToolTip": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\DashboardForm.cs [Design]",
+              "RelativeToolTip": "Forms\\DashboardForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T16:08:27.744Z",
+              "WhenOpened": "2026-05-10T20:53:04.737Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DashboardForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\DashboardForm.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\DashboardForm.Designer.cs",
+              "ToolTip": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\DashboardForm.Designer.cs",
+              "RelativeToolTip": "Forms\\DashboardForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T20:52:50.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RegisterForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "Forms\\RegisterForm.cs",
+              "ToolTip": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\RegisterForm.cs [Design]",
+              "RelativeToolTip": "Forms\\RegisterForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T21:01:34.312Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\LoginForm.cs",
+              "RelativeDocumentMoniker": "Forms\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\LoginForm.cs [Design]",
+              "RelativeToolTip": "Forms\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T20:57:14.893Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\LoginForm.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\LoginForm.Designer.cs",
+              "ToolTip": "C:\\Users\\John.McIntyre\\GCU_Capstone\\McIntyresFitnessApp\\Forms\\LoginForm.Designer.cs",
+              "RelativeToolTip": "Forms\\LoginForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T20:57:12.478Z",
               "EditorCaption": ""
             }
           ]

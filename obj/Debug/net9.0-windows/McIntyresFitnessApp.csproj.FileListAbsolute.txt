@@ -34,3 +34,4 @@ C:\Users\John.McIntyre\GCU_Capstone\McIntyresFitnessApp\obj\Debug\net9.0-windows
 C:\Users\John.McIntyre\GCU_Capstone\McIntyresFitnessApp\obj\Debug\net9.0-windows\McIntyresFitnessApp.pdb
 C:\Users\John.McIntyre\GCU_Capstone\McIntyresFitnessApp\obj\Debug\net9.0-windows\McIntyresFitnessApp.genruntimeconfig.cache
 C:\Users\John.McIntyre\GCU_Capstone\McIntyresFitnessApp\obj\Debug\net9.0-windows\ref\McIntyresFitnessApp.dll
+C:\Users\John.McIntyre\GCU_Capstone\McIntyresFitnessApp\obj\Debug\net9.0-windows\McIntyresFitnessApp.sourcelink.json

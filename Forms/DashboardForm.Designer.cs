@@ -31,13 +31,15 @@
             btnLogWorkout = new Button();
             btnViewHistory = new Button();
             btnProgress = new Button();
+            lblMcIntyre = new Label();
             SuspendLayout();
             // 
             // btnLogWorkout
             // 
-            btnLogWorkout.Location = new Point(80, 40);
+            btnLogWorkout.Location = new Point(91, 86);
+            btnLogWorkout.Margin = new Padding(3, 4, 3, 4);
             btnLogWorkout.Name = "btnLogWorkout";
-            btnLogWorkout.Size = new Size(150, 23);
+            btnLogWorkout.Size = new Size(171, 64);
             btnLogWorkout.TabIndex = 0;
             btnLogWorkout.Text = "Log Workout";
             btnLogWorkout.UseVisualStyleBackColor = true;
@@ -45,9 +47,10 @@
             // 
             // btnViewHistory
             // 
-            btnViewHistory.Location = new Point(306, 40);
+            btnViewHistory.Location = new Point(350, 86);
+            btnViewHistory.Margin = new Padding(3, 4, 3, 4);
             btnViewHistory.Name = "btnViewHistory";
-            btnViewHistory.Size = new Size(172, 23);
+            btnViewHistory.Size = new Size(197, 64);
             btnViewHistory.TabIndex = 1;
             btnViewHistory.Text = "View History";
             btnViewHistory.UseVisualStyleBackColor = true;
@@ -55,25 +58,42 @@
             // 
             // btnProgress
             // 
-            btnProgress.Location = new Point(553, 40);
+            btnProgress.Location = new Point(632, 86);
+            btnProgress.Margin = new Padding(3, 4, 3, 4);
             btnProgress.Name = "btnProgress";
-            btnProgress.Size = new Size(168, 23);
+            btnProgress.Size = new Size(192, 64);
             btnProgress.TabIndex = 2;
             btnProgress.Text = "Progress";
             btnProgress.UseVisualStyleBackColor = true;
             btnProgress.Click += btnProgress_Click;
             // 
+            // lblMcIntyre
+            // 
+            lblMcIntyre.AutoSize = true;
+            lblMcIntyre.BackColor = Color.DimGray;
+            lblMcIntyre.Font = new Font("Showcard Gothic", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblMcIntyre.ForeColor = Color.RoyalBlue;
+            lblMcIntyre.Location = new Point(12, 9);
+            lblMcIntyre.Name = "lblMcIntyre";
+            lblMcIntyre.Size = new Size(380, 50);
+            lblMcIntyre.TabIndex = 3;
+            lblMcIntyre.Text = "McIntyre Fitness";
+            // 
             // DashboardForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.DimGray;
+            ClientSize = new Size(914, 600);
+            Controls.Add(lblMcIntyre);
             Controls.Add(btnProgress);
             Controls.Add(btnViewHistory);
             Controls.Add(btnLogWorkout);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "DashboardForm";
             Text = "DashboardForm";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -81,5 +101,6 @@
         private Button btnLogWorkout;
         private Button btnViewHistory;
         private Button btnProgress;
+        private Label lblMcIntyre;
     }
 }

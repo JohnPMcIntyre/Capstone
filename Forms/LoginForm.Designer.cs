@@ -34,46 +34,50 @@
             txtPassword = new TextBox();
             btnLogin = new Button();
             btnRegister = new Button();
+            lblMcIntyre = new Label();
             SuspendLayout();
             // 
             // Username
             // 
             Username.AutoSize = true;
-            Username.Location = new Point(82, 71);
+            Username.Location = new Point(94, 95);
             Username.Name = "Username";
-            Username.Size = new Size(60, 15);
+            Username.Size = new Size(75, 20);
             Username.TabIndex = 0;
             Username.Text = "Username";
             // 
             // txtUsername
             // 
-            txtUsername.Location = new Point(148, 68);
+            txtUsername.Location = new Point(169, 92);
+            txtUsername.Margin = new Padding(3, 4, 3, 4);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(173, 23);
+            txtUsername.Size = new Size(197, 27);
             txtUsername.TabIndex = 1;
             // 
             // Password
             // 
             Password.AutoSize = true;
-            Password.Location = new Point(85, 114);
+            Password.Location = new Point(97, 152);
             Password.Name = "Password";
-            Password.Size = new Size(57, 15);
+            Password.Size = new Size(70, 20);
             Password.TabIndex = 2;
             Password.Text = "Password";
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(148, 106);
+            txtPassword.Location = new Point(169, 141);
+            txtPassword.Margin = new Padding(3, 4, 3, 4);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(173, 23);
+            txtPassword.Size = new Size(197, 27);
             txtPassword.TabIndex = 3;
             txtPassword.UseSystemPasswordChar = true;
             // 
             // btnLogin
             // 
-            btnLogin.Location = new Point(148, 190);
+            btnLogin.Location = new Point(169, 253);
+            btnLogin.Margin = new Padding(3, 4, 3, 4);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(75, 23);
+            btnLogin.Size = new Size(86, 32);
             btnLogin.TabIndex = 4;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = true;
@@ -81,25 +85,40 @@
             // 
             // btnRegister
             // 
-            btnRegister.Location = new Point(246, 190);
+            btnRegister.Location = new Point(281, 253);
+            btnRegister.Margin = new Padding(3, 4, 3, 4);
             btnRegister.Name = "btnRegister";
-            btnRegister.Size = new Size(75, 23);
+            btnRegister.Size = new Size(86, 32);
             btnRegister.TabIndex = 5;
             btnRegister.Text = "Register";
             btnRegister.UseVisualStyleBackColor = true;
             btnRegister.Click += btnRegister_Click;
             // 
+            // lblMcIntyre
+            // 
+            lblMcIntyre.AutoSize = true;
+            lblMcIntyre.Font = new Font("Showcard Gothic", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblMcIntyre.ForeColor = Color.RoyalBlue;
+            lblMcIntyre.Location = new Point(77, 21);
+            lblMcIntyre.Name = "lblMcIntyre";
+            lblMcIntyre.Size = new Size(380, 50);
+            lblMcIntyre.TabIndex = 6;
+            lblMcIntyre.Text = "McIntyre Fitness";
+            // 
             // LoginForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(440, 288);
+            BackColor = Color.DimGray;
+            ClientSize = new Size(503, 384);
+            Controls.Add(lblMcIntyre);
             Controls.Add(btnRegister);
             Controls.Add(btnLogin);
             Controls.Add(txtPassword);
             Controls.Add(Password);
             Controls.Add(txtUsername);
             Controls.Add(Username);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "LoginForm";
             Text = "McIntyre Fitness Login";
             ResumeLayout(false);
@@ -114,5 +133,6 @@
         private TextBox txtPassword;
         private Button btnLogin;
         private Button btnRegister;
+        private Label lblMcIntyre;
     }
 }

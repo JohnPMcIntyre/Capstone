@@ -32,6 +32,7 @@
             btnBack = new Button();
             btnDeleteWorkout = new Button();
             btnEditWorkout = new Button();
+            lblMcIntyre = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvWorkouts).BeginInit();
             SuspendLayout();
             // 
@@ -39,15 +40,18 @@
             // 
             dgvWorkouts.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvWorkouts.Location = new Point(0, 0);
+            dgvWorkouts.Margin = new Padding(3, 4, 3, 4);
             dgvWorkouts.Name = "dgvWorkouts";
-            dgvWorkouts.Size = new Size(800, 414);
+            dgvWorkouts.RowHeadersWidth = 51;
+            dgvWorkouts.Size = new Size(914, 552);
             dgvWorkouts.TabIndex = 0;
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(675, 420);
+            btnBack.Location = new Point(771, 560);
+            btnBack.Margin = new Padding(3, 4, 3, 4);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(100, 23);
+            btnBack.Size = new Size(114, 31);
             btnBack.TabIndex = 1;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = true;
@@ -55,9 +59,10 @@
             // 
             // btnDeleteWorkout
             // 
-            btnDeleteWorkout.Location = new Point(569, 420);
+            btnDeleteWorkout.Location = new Point(650, 560);
+            btnDeleteWorkout.Margin = new Padding(3, 4, 3, 4);
             btnDeleteWorkout.Name = "btnDeleteWorkout";
-            btnDeleteWorkout.Size = new Size(100, 23);
+            btnDeleteWorkout.Size = new Size(114, 31);
             btnDeleteWorkout.TabIndex = 2;
             btnDeleteWorkout.Text = "Delete";
             btnDeleteWorkout.UseVisualStyleBackColor = true;
@@ -65,28 +70,43 @@
             // 
             // btnEditWorkout
             // 
-            btnEditWorkout.Location = new Point(463, 420);
+            btnEditWorkout.Location = new Point(529, 560);
+            btnEditWorkout.Margin = new Padding(3, 4, 3, 4);
             btnEditWorkout.Name = "btnEditWorkout";
-            btnEditWorkout.Size = new Size(100, 23);
+            btnEditWorkout.Size = new Size(114, 31);
             btnEditWorkout.TabIndex = 3;
             btnEditWorkout.Text = "Edit";
             btnEditWorkout.UseVisualStyleBackColor = true;
             btnEditWorkout.Click += btnEditWorkout_Click;
             // 
+            // lblMcIntyre
+            // 
+            lblMcIntyre.AutoSize = true;
+            lblMcIntyre.Font = new Font("Showcard Gothic", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblMcIntyre.ForeColor = Color.RoyalBlue;
+            lblMcIntyre.Location = new Point(0, 556);
+            lblMcIntyre.Name = "lblMcIntyre";
+            lblMcIntyre.Size = new Size(380, 50);
+            lblMcIntyre.TabIndex = 7;
+            lblMcIntyre.Text = "McIntyre Fitness";
+            // 
             // WorkoutHistoryForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
+            Controls.Add(lblMcIntyre);
             Controls.Add(btnEditWorkout);
             Controls.Add(btnDeleteWorkout);
             Controls.Add(btnBack);
             Controls.Add(dgvWorkouts);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "WorkoutHistoryForm";
             Text = "WorkoutHistoryForm";
             Load += WorkoutHistoryForm_Load;
             ((System.ComponentModel.ISupportInitialize)dgvWorkouts).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -96,5 +116,6 @@
         private Button btnDeleteWorkout;
         private Button button1;
         private Button btnEditWorkout;
+        private Label lblMcIntyre;
     }
 }
