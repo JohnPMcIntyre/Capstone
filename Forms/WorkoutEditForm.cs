@@ -8,6 +8,9 @@ namespace McIntyresFitnessApp.Forms
     {
         private int workoutId;
 
+        /// <summary>
+        /// Initializes the edit form and populates fields with the selected workout data.
+        /// </summary>
         public WorkoutEditForm(int id, string exercise, int sets, int reps, decimal weight)
         {
             InitializeComponent();
@@ -20,6 +23,9 @@ namespace McIntyresFitnessApp.Forms
             numWeight.Value = weight;
         }
 
+        /// <summary>
+        /// Saves the updated workout data to the database.
+        /// </summary>
         private void btnSave_Click(object sender, EventArgs e)
         {
             DatabaseHelper db = new DatabaseHelper();

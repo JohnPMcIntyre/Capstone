@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("McIntyresFitnessApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf2a3a2a642c447fb9b8fa5b1ad2c614b7a38876")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c80d8a88cde506516c2edd282c6301316fb72444")]
 [assembly: System.Reflection.AssemblyProductAttribute("McIntyresFitnessApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("McIntyresFitnessApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

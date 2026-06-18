@@ -18,6 +18,9 @@ namespace McIntyresFitnessApp.Forms
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Registers a new user account using the entered username and password.
+        /// </summary>
         private void btnRegister_Click(object sender, EventArgs e)
         {
             DatabaseHelper db = new DatabaseHelper();
@@ -33,6 +36,9 @@ namespace McIntyresFitnessApp.Forms
                 MessageBox.Show("Registration failed.");
         }
 
+        /// <summary>
+        /// Closes the registration form.
+        /// </summary>
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();

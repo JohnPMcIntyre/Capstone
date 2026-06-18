@@ -18,6 +18,9 @@ namespace McIntyresFitnessApp.Forms
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Loads and displays the user's progress statistics when the form opens.
+        /// </summary>
         private void ProgressForm_Load(object sender, EventArgs e)
         {
             DatabaseHelper db = new DatabaseHelper();

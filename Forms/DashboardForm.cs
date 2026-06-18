@@ -17,6 +17,9 @@ namespace McIntyresFitnessApp.Forms
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Opens the workout logging form.
+        /// </summary>
         private void btnLogWorkout_Click(object sender, EventArgs e)
         {
             using (WorkoutForm form = new WorkoutForm())
@@ -25,6 +28,9 @@ namespace McIntyresFitnessApp.Forms
             }
         }
 
+        /// <summary>
+        /// Opens the workout history form.
+        /// </summary>
         private void btnViewHistory_Click(object sender, EventArgs e)
         {
             using (WorkoutHistoryForm form = new WorkoutHistoryForm())
@@ -33,10 +39,21 @@ namespace McIntyresFitnessApp.Forms
             }
         }
 
+        /// <summary>
+        /// Opens the progress tracking form.
+        /// </summary>
         private void btnProgress_Click(object sender, EventArgs e)
         {
             ProgressForm form = new ProgressForm();
             form.ShowDialog();
+        }
+
+        /// <summary>
+        /// Fires when the dashboard form loads.
+        /// </summary>
+        private void DashboardForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

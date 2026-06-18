@@ -12,6 +12,9 @@ namespace McIntyresFitnessApp.Forms
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Validates the user's credentials and opens the dashboard on success.
+        /// </summary>
         private void btnLogin_Click(object sender, EventArgs e)
         {
             DatabaseHelper db = new DatabaseHelper();
@@ -60,6 +63,9 @@ namespace McIntyresFitnessApp.Forms
             }
         }
 
+        /// <summary>
+        /// Opens the registration form.
+        /// </summary>
         private void btnRegister_Click(object sender, EventArgs e)
         {
             RegisterForm registerForm = new RegisterForm();

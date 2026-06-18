@@ -18,10 +18,16 @@ namespace McIntyresFitnessApp.Forms
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Fires when the form loads.
+        /// </summary>
         private void WorkoutForm_Load(object sender, EventArgs e)
         {
         }
 
+        /// <summary>
+        /// Saves the workout entry to the database.
+        /// </summary>
         private void btnSaveWorkout_Click(object sender, EventArgs e)
         {
             DatabaseHelper db = new DatabaseHelper();
@@ -50,6 +56,9 @@ namespace McIntyresFitnessApp.Forms
             }
         }
 
+        /// <summary>
+        /// Closes the workout form.
+        /// </summary>
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
