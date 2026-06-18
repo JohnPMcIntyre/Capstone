@@ -56,20 +56,28 @@ namespace McIntyresFitnessApp.Forms
         {
             if (dgvWorkouts.SelectedRows.Count > 0)
             {
-                int workoutId = Convert.ToInt32(dgvWorkouts.SelectedRows[0].Cells["WorkoutID"].Value);
+                DialogResult confirm = MessageBox.Show(
+                    "Are you sure you want to delete this workout?",
+                    "Confirm Delete",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning
+                );
 
-                DatabaseHelper db = new DatabaseHelper();
-
-                bool success = db.DeleteWorkout(workoutId);
-
-                if (success)
+                if (confirm == DialogResult.Yes)
                 {
-                    MessageBox.Show("Workout deleted!");
-                    LoadWorkouts();
-                }
-                else
-                {
-                    MessageBox.Show("Delete failed.");
+                    int workoutId = Convert.ToInt32(dgvWorkouts.SelectedRows[0].Cells["WorkoutID"].Value);
+                    DatabaseHelper db = new DatabaseHelper();
+                    bool success = db.DeleteWorkout(workoutId);
+
+                    if (success)
+                    {
+                        MessageBox.Show("Workout deleted!");
+                        LoadWorkouts();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Delete failed.");
+                    }
                 }
             }
         }
