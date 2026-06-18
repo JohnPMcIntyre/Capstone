@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using McIntyresFitnessApp.Services;
 
 namespace McIntyresFitnessApp.Forms
 {
@@ -54,6 +55,20 @@ namespace McIntyresFitnessApp.Forms
         private void DashboardForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        /// <summary>
+        /// Clears the user session and returns to the login screen.
+        /// </summary>
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            // Clear the current user session
+            UserSession.UserId = 0;
+            UserSession.Username = null;
+
+            LoginForm login = new LoginForm();
+            login.Show();
+            this.Close();
         }
     }
 }

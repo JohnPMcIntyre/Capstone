@@ -20,11 +20,17 @@ namespace McIntyresFitnessApp.Forms
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Loads the workout history when the form opens.
+        /// </summary>
         private void WorkoutHistoryForm_Load(object sender, EventArgs e)
         {
             LoadWorkouts();
         }
 
+        /// <summary>
+        /// Retrieves and displays the logged in user's workouts in the grid.
+        /// </summary>
         private void LoadWorkouts()
         {
             DatabaseHelper db = new DatabaseHelper();
@@ -35,11 +41,17 @@ namespace McIntyresFitnessApp.Forms
             dgvWorkouts.DataSource = data;
         }
 
+        /// <summary>
+        /// Closes the workout history form.
+        /// </summary>
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        /// <summary>
+        /// Deletes the selected workout from the database and refreshes the grid.
+        /// </summary>
         private void btnDeleteWorkout_Click(object sender, EventArgs e)
         {
             if (dgvWorkouts.SelectedRows.Count > 0)
@@ -62,6 +74,9 @@ namespace McIntyresFitnessApp.Forms
             }
         }
 
+        /// <summary>
+        /// Stores the ID of the workout row clicked in the grid.
+        /// </summary>
         private void dgvWorkouts_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -72,6 +87,9 @@ namespace McIntyresFitnessApp.Forms
             }
         }
 
+        /// <summary>
+        /// Opens the edit form for the selected workout and refreshes the grid after saving.
+        /// </summary>
         private void btnEditWorkout_Click(object sender, EventArgs e)
         {
             if (dgvWorkouts.SelectedRows.Count == 0)

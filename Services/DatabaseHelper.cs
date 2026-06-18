@@ -19,6 +19,9 @@ namespace McIntyresFitnessApp.Services
             return new MySqlConnection(connectionString);
         }
 
+        /// <summary>
+        /// Inserts a new user record into the Users table.
+        /// </summary>
         public bool RegisterUser(string username, string password)
         {
             using (MySqlConnection conn = GetConnection())
@@ -38,6 +41,9 @@ namespace McIntyresFitnessApp.Services
             }
         }
 
+        /// <summary>
+        /// Inserts a new workout record into the Workouts table.
+        /// </summary>
         public bool AddWorkout(int userId, string exercise, int sets, int reps, decimal weight)
         {
             using (MySqlConnection conn = GetConnection())
@@ -61,6 +67,9 @@ namespace McIntyresFitnessApp.Services
             }
         }
 
+        /// <summary>
+        /// Retrieves all workouts for a given user ordered by date.
+        /// </summary>
         public DataTable GetWorkouts(int userId)
         {
             using (MySqlConnection conn = GetConnection())
@@ -86,6 +95,9 @@ namespace McIntyresFitnessApp.Services
             }
         }
 
+        /// <summary>
+        /// Deletes a workout record from the database by ID.
+        /// </summary>
         public bool DeleteWorkout(int workoutId)
         {
             using (MySqlConnection conn = GetConnection())
@@ -103,6 +115,9 @@ namespace McIntyresFitnessApp.Services
             }
         }
 
+        /// <summary>
+        /// Updates an existing workout record with new values.
+        /// </summary>
         public bool UpdateWorkout(int workoutId, string exercise, int sets, int reps, decimal weight)
         {
             using (MySqlConnection conn = GetConnection())
@@ -129,6 +144,9 @@ namespace McIntyresFitnessApp.Services
             }
         }
 
+        /// <summary>
+        /// Returns the total number of workouts logged by the user.
+        /// </summary>
         public int GetTotalWorkouts(int userId)
         {
             using (MySqlConnection conn = GetConnection())
@@ -146,6 +164,9 @@ namespace McIntyresFitnessApp.Services
             }
         }
 
+        /// <summary>
+        /// Calculates the total weight lifted by multiplying sets, reps, and weight for all workouts.
+        /// </summary>
         public decimal GetTotalWeightLifted(int userId)
         {
             using (MySqlConnection conn = GetConnection())
@@ -165,6 +186,9 @@ namespace McIntyresFitnessApp.Services
             }
         }
 
+        /// <summary>
+        /// Returns the heaviest weight the user has ever lifted.
+        /// </summary>
         public decimal GetMaxWeight(int userId)
         {
             using (MySqlConnection conn = GetConnection())
@@ -184,6 +208,9 @@ namespace McIntyresFitnessApp.Services
             }
         }
 
+        /// <summary>
+        /// Returns the exercise the user has logged most frequently.
+        /// </summary>
         public string GetFavoriteExercise(int userId)
         {
             using (MySqlConnection conn = GetConnection())

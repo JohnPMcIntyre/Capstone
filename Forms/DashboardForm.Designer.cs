@@ -32,6 +32,7 @@
             btnViewHistory = new Button();
             btnProgress = new Button();
             lblMcIntyre = new Label();
+            btnLogout = new Button();
             SuspendLayout();
             // 
             // btnLogWorkout
@@ -79,12 +80,24 @@
             lblMcIntyre.TabIndex = 3;
             lblMcIntyre.Text = "McIntyre Fitness";
             // 
+            // btnLogout
+            // 
+            btnLogout.Location = new Point(359, 268);
+            btnLogout.Margin = new Padding(3, 4, 3, 4);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(197, 64);
+            btnLogout.TabIndex = 4;
+            btnLogout.Text = "Logout";
+            btnLogout.UseVisualStyleBackColor = true;
+            btnLogout.Click += btnLogout_Click;
+            // 
             // DashboardForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DimGray;
             ClientSize = new Size(914, 600);
+            Controls.Add(btnLogout);
             Controls.Add(lblMcIntyre);
             Controls.Add(btnProgress);
             Controls.Add(btnViewHistory);
@@ -102,5 +115,6 @@
         private Button btnViewHistory;
         private Button btnProgress;
         private Label lblMcIntyre;
+        private Button btnLogout;
     }
 }
