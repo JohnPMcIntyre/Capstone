@@ -23,17 +23,30 @@ namespace McIntyresFitnessApp.Forms
         /// </summary>
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            DatabaseHelper db = new DatabaseHelper();
+            // Check for empty fields before hitting the database
+            if (string.IsNullOrWhiteSpace(txtUsername.Text) || string.IsNullOrWhiteSpace(txtPassword.Text))
+            {
+                MessageBox.Show("Please enter a username and password.");
+                return;
+            }
 
+            DatabaseHelper db = new DatabaseHelper();
             string username = txtUsername.Text;
             string password = txtPassword.Text;
 
-            bool success = db.RegisterUser(username, password);
+            try
+            {
+                bool success = db.RegisterUser(username, password);
 
-            if (success)
-                MessageBox.Show("Account created!");
-            else
-                MessageBox.Show("Registration failed.");
+                if (success)
+                    MessageBox.Show("Account created!");
+                else
+                    MessageBox.Show("Registration failed. Username may already exist.");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Username already exists.");
+            }
         }
 
         /// <summary>

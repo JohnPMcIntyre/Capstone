@@ -32,6 +32,7 @@ namespace McIntyresFitnessApp.Services
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
+
                     cmd.Parameters.AddWithValue("@username", username);
                     cmd.Parameters.AddWithValue("@password", password);
 
