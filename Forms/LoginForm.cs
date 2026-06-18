@@ -7,9 +7,24 @@ namespace McIntyresFitnessApp.Forms
 {
     public partial class LoginForm : Form
     {
+        /// <summary>
+        /// Initializes the login form components.
+        /// </summary>
         public LoginForm()
         {
             InitializeComponent();
+        }
+
+        /// <summary>
+        /// Hashes a plain text password using SHA256.
+        /// </summary>
+        private string HashPassword(string password)
+        {
+            using (System.Security.Cryptography.SHA256 sha256 = System.Security.Cryptography.SHA256.Create())
+            {
+                byte[] bytes = sha256.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+                return Convert.ToBase64String(bytes);
+            }
         }
 
         /// <summary>
@@ -18,9 +33,8 @@ namespace McIntyresFitnessApp.Forms
         private void btnLogin_Click(object sender, EventArgs e)
         {
             DatabaseHelper db = new DatabaseHelper();
-
             string username = txtUsername.Text;
-            string password = txtPassword.Text;
+            string password = HashPassword(txtPassword.Text);
 
             try
             {
@@ -28,6 +42,7 @@ namespace McIntyresFitnessApp.Forms
                 {
                     conn.Open();
 
+                    // Query to check if the username and hashed password match a record
                     string query = "SELECT UserID FROM Users WHERE Username = @username AND PasswordHash = @password";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
@@ -39,15 +54,14 @@ namespace McIntyresFitnessApp.Forms
 
                         if (result != null)
                         {
+                            // Store the logged in user's info in the session
                             int userId = Convert.ToInt32(result);
                             UserSession.UserId = userId;
                             UserSession.Username = username;
 
                             MessageBox.Show("Login Successful!");
-
                             DashboardForm dashboard = new DashboardForm();
                             dashboard.Show();
-
                             this.Hide();
                         }
                         else

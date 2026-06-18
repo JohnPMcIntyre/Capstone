@@ -20,6 +20,18 @@ namespace McIntyresFitnessApp.Services
         }
 
         /// <summary>
+        /// Hashes a plain text password using SHA256.
+        /// </summary>
+        private string HashPassword(string password)
+        {
+            using (System.Security.Cryptography.SHA256 sha256 = System.Security.Cryptography.SHA256.Create())
+            {
+                byte[] bytes = sha256.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+                return Convert.ToBase64String(bytes);
+            }
+        }
+
+        /// <summary>
         /// Inserts a new user record into the Users table.
         /// </summary>
         public bool RegisterUser(string username, string password)
@@ -32,9 +44,8 @@ namespace McIntyresFitnessApp.Services
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
-
                     cmd.Parameters.AddWithValue("@username", username);
-                    cmd.Parameters.AddWithValue("@password", password);
+                    cmd.Parameters.AddWithValue("@password", HashPassword(password));
 
                     int result = cmd.ExecuteNonQuery();
                     return result > 0;
