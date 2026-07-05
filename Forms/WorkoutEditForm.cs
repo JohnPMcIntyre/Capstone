@@ -48,5 +48,26 @@ namespace McIntyresFitnessApp.Forms
                 MessageBox.Show("Update failed.");
             }
         }
+
+        /// <summary>
+        /// Fires when the edit form loads and applies UI styling.
+        /// </summary>
+        private void WorkoutEditForm_Load(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(28, 40, 60);
+            this.Text = "McIntyre Fitness App";
+
+            lblMcIntyre.ForeColor = Color.White;
+            lblMcIntyre.BackColor = Color.Transparent;
+            lblMcIntyre.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
+
+            btnSave.Size = new Size(160, 40);
+            btnSave.BackColor = Color.FromArgb(0, 120, 215);
+            btnSave.ForeColor = Color.White;
+            btnSave.FlatStyle = FlatStyle.Flat;
+            btnSave.FlatAppearance.BorderSize = 0;
+            btnSave.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            btnSave.Cursor = Cursors.Hand;
+        }
     }
 }

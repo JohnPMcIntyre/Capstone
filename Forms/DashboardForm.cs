@@ -50,11 +50,39 @@ namespace McIntyresFitnessApp.Forms
         }
 
         /// <summary>
-        /// Fires when the dashboard form loads.
+        /// Fires when the dashboard form loads and applies UI styling.
         /// </summary>
         private void DashboardForm_Load(object sender, EventArgs e)
         {
+            this.BackColor = Color.FromArgb(28, 40, 60);
+            this.Text = "McIntyre Fitness App";
+            lblMcIntyre.ForeColor = Color.White;
+            lblMcIntyre.BackColor = Color.Transparent;
+            lblMcIntyre.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
+            lblMcIntyre.Text = "McIntyre Fitness  |  Welcome, " + UserSession.Username + "!";
+            btnLogWorkout.Size = new Size(180, 60);
+            btnViewHistory.Size = new Size(180, 60);
+            btnProgress.Size = new Size(180, 60);
+            btnLogout.Size = new Size(180, 60);
 
+            int formCenter = this.ClientSize.Width / 2;
+            btnLogWorkout.Location = new Point(formCenter - 290, 120);
+            btnViewHistory.Location = new Point(formCenter - 90, 120);
+            btnProgress.Location = new Point(formCenter + 110, 120);
+            btnLogout.Location = new Point(formCenter - 90, 220);
+
+            Button[] buttons = { btnLogWorkout, btnViewHistory, btnProgress, btnLogout };
+            foreach (Button btn in buttons)
+            {
+                btn.BackColor = Color.FromArgb(0, 120, 215);
+                btn.ForeColor = Color.White;
+                btn.FlatStyle = FlatStyle.Flat;
+                btn.FlatAppearance.BorderSize = 0;
+                btn.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+                btn.Cursor = Cursors.Hand;
+            }
+
+            btnLogout.BackColor = Color.FromArgb(180, 40, 40);
         }
 
         /// <summary>

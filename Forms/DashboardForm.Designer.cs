@@ -105,6 +105,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "DashboardForm";
             Text = "DashboardForm";
+            this.Load += new EventHandler(this.DashboardForm_Load);
             ResumeLayout(false);
             PerformLayout();
         }

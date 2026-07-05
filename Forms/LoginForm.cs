@@ -85,5 +85,35 @@ namespace McIntyresFitnessApp.Forms
             RegisterForm registerForm = new RegisterForm();
             registerForm.ShowDialog();
         }
+
+        /// <summary>
+        /// Fires when the login form loads and applies UI styling.
+        /// </summary>
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(28, 40, 60);
+            this.Text = "McIntyre Fitness App";
+            lblMcIntyre.ForeColor = Color.White;
+            lblMcIntyre.BackColor = Color.Transparent;
+            lblMcIntyre.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
+            Username.ForeColor = Color.White;
+            Username.BackColor = Color.Transparent;
+            Password.ForeColor = Color.White;
+            Password.BackColor = Color.Transparent;
+            btnLogin.Size = new Size(120, 40);
+            btnLogin.BackColor = Color.FromArgb(0, 120, 215);
+            btnLogin.ForeColor = Color.White;
+            btnLogin.FlatStyle = FlatStyle.Flat;
+            btnLogin.FlatAppearance.BorderSize = 0;
+            btnLogin.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            btnLogin.Cursor = Cursors.Hand;
+            btnRegister.Size = new Size(120, 40);
+            btnRegister.BackColor = Color.FromArgb(80, 80, 80);
+            btnRegister.ForeColor = Color.White;
+            btnRegister.FlatStyle = FlatStyle.Flat;
+            btnRegister.FlatAppearance.BorderSize = 0;
+            btnRegister.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            btnRegister.Cursor = Cursors.Hand;
+        }
     }
 }

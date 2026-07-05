@@ -121,6 +121,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "LoginForm";
             Text = "McIntyre Fitness Login";
+            this.Load += new EventHandler(this.LoginForm_Load);
             ResumeLayout(false);
             PerformLayout();
         }

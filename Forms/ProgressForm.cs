@@ -19,25 +19,32 @@ namespace McIntyresFitnessApp.Forms
         }
 
         /// <summary>
-        /// Loads and displays the user's progress statistics when the form opens.
+        /// Loads and displays the user's progress statistics when the form opens and applies UI styling.
         /// </summary>
         private void ProgressForm_Load(object sender, EventArgs e)
         {
+            this.BackColor = Color.FromArgb(28, 40, 60);
+            this.Text = "McIntyre Fitness App";
+
+
+            lblMcIntyre.ForeColor = Color.White;
+            lblMcIntyre.BackColor = Color.Transparent;
+            lblMcIntyre.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
+
+            Label[] statLabels = { lblTotalWorkouts, lblTotalWeight, lblMaxWeight, lblFavoriteExercise };
+            foreach (Label lbl in statLabels)
+            {
+                lbl.ForeColor = Color.White;
+                lbl.BackColor = Color.Transparent;
+                lbl.Font = new Font("Segoe UI", 13F);
+            }
+
             DatabaseHelper db = new DatabaseHelper();
-
             int userId = UserSession.UserId;
-
-            lblTotalWorkouts.Text =
-                "Total Workouts: " + db.GetTotalWorkouts(userId);
-
-            lblTotalWeight.Text =
-                "Total Weight Lifted: " + db.GetTotalWeightLifted(userId) + " lbs";
-
-            lblMaxWeight.Text =
-                "Heaviest Lift: " + db.GetMaxWeight(userId) + " lbs";
-
-            lblFavoriteExercise.Text =
-                "Favorite Exercise: " + db.GetFavoriteExercise(userId);
+            lblTotalWorkouts.Text = "Total Workouts: " + db.GetTotalWorkouts(userId);
+            lblTotalWeight.Text = "Total Weight Lifted: " + db.GetTotalWeightLifted(userId) + " lbs";
+            lblMaxWeight.Text = "Heaviest Lift: " + db.GetMaxWeight(userId) + " lbs";
+            lblFavoriteExercise.Text = "Favorite Exercise: " + db.GetFavoriteExercise(userId);
         }
     }
 }

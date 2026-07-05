@@ -169,6 +169,7 @@
             ((System.ComponentModel.ISupportInitialize)numSets).EndInit();
             ((System.ComponentModel.ISupportInitialize)numReps).EndInit();
             ((System.ComponentModel.ISupportInitialize)numWeight).EndInit();
+            this.Load += new EventHandler(this.WorkoutForm_Load);
             ResumeLayout(false);
             PerformLayout();
         }

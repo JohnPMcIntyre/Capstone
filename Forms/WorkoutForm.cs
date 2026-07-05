@@ -19,10 +19,36 @@ namespace McIntyresFitnessApp.Forms
         }
 
         /// <summary>
-        /// Fires when the form loads.
+        /// Fires when the form loads and applies UI styling.
         /// </summary>
         private void WorkoutForm_Load(object sender, EventArgs e)
         {
+            this.BackColor = Color.FromArgb(28, 40, 60);
+            this.Text = "McIntyre Fitness App";
+
+            lblMcIntyre.ForeColor = Color.White;
+            lblMcIntyre.BackColor = Color.Transparent;
+            lblMcIntyre.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
+            lblExerciseName.ForeColor = Color.White;
+            lblExerciseName.BackColor = Color.Transparent;
+            lblNumSets.ForeColor = Color.White;
+            lblNumSets.BackColor = Color.Transparent;
+            lblNumReps.ForeColor = Color.White;
+            lblNumReps.BackColor = Color.Transparent;
+            lblNumWeight.ForeColor = Color.White;
+            lblNumWeight.BackColor = Color.Transparent;
+            btnSaveWorkout.BackColor = Color.FromArgb(0, 120, 215);
+            btnSaveWorkout.ForeColor = Color.White;
+            btnSaveWorkout.FlatStyle = FlatStyle.Flat;
+            btnSaveWorkout.FlatAppearance.BorderSize = 0;
+            btnSaveWorkout.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            btnSaveWorkout.Cursor = Cursors.Hand;
+            btnBack.BackColor = Color.FromArgb(180, 40, 40);
+            btnBack.ForeColor = Color.White;
+            btnBack.FlatStyle = FlatStyle.Flat;
+            btnBack.FlatAppearance.BorderSize = 0;
+            btnBack.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            btnBack.Cursor = Cursors.Hand;
         }
 
         /// <summary>

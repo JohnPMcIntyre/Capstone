@@ -21,10 +21,66 @@ namespace McIntyresFitnessApp.Forms
         }
 
         /// <summary>
-        /// Loads the workout history when the form opens.
+        /// Loads the workout history when the form opens and applies UI styling.
         /// </summary>
         private void WorkoutHistoryForm_Load(object sender, EventArgs e)
         {
+            this.BackColor = Color.FromArgb(28, 40, 60);
+            this.Text = "McIntyre Fitness App";
+
+            lblMcIntyre.ForeColor = Color.White;
+            lblMcIntyre.BackColor = Color.Transparent;
+            lblMcIntyre.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+
+            btnEditWorkout.BackColor = Color.FromArgb(0, 120, 215);
+            btnEditWorkout.ForeColor = Color.White;
+            btnEditWorkout.FlatStyle = FlatStyle.Flat;
+            btnEditWorkout.FlatAppearance.BorderSize = 0;
+            btnEditWorkout.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnEditWorkout.Cursor = Cursors.Hand;
+
+            btnDeleteWorkout.BackColor = Color.FromArgb(180, 40, 40);
+            btnDeleteWorkout.ForeColor = Color.White;
+            btnDeleteWorkout.FlatStyle = FlatStyle.Flat;
+            btnDeleteWorkout.FlatAppearance.BorderSize = 0;
+            btnDeleteWorkout.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnDeleteWorkout.Cursor = Cursors.Hand;
+
+            btnBack.BackColor = Color.FromArgb(80, 80, 80);
+            btnBack.ForeColor = Color.White;
+            btnBack.FlatStyle = FlatStyle.Flat;
+            btnBack.FlatAppearance.BorderSize = 0;
+            btnBack.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnBack.Cursor = Cursors.Hand;
+
+            btnFilter.BackColor = Color.FromArgb(0, 120, 215);
+            btnFilter.ForeColor = Color.White;
+            btnFilter.FlatStyle = FlatStyle.Flat;
+            btnFilter.FlatAppearance.BorderSize = 0;
+            btnFilter.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnFilter.Cursor = Cursors.Hand;
+
+            btnClear.BackColor = Color.FromArgb(80, 80, 80);
+            btnClear.ForeColor = Color.White;
+            btnClear.FlatStyle = FlatStyle.Flat;
+            btnClear.FlatAppearance.BorderSize = 0;
+            btnClear.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnClear.Cursor = Cursors.Hand;
+
+            dgvWorkouts.BackgroundColor = Color.FromArgb(28, 40, 60);
+            dgvWorkouts.BorderStyle = BorderStyle.None;
+            dgvWorkouts.DefaultCellStyle.BackColor = Color.FromArgb(40, 55, 80);
+            dgvWorkouts.DefaultCellStyle.ForeColor = Color.White;
+            dgvWorkouts.DefaultCellStyle.Font = new Font("Segoe UI", 10F);
+            dgvWorkouts.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(0, 120, 215);
+            dgvWorkouts.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgvWorkouts.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            dgvWorkouts.EnableHeadersVisualStyles = false;
+            dgvWorkouts.GridColor = Color.FromArgb(60, 80, 110);
+            dgvWorkouts.RowHeadersVisible = true;
+            dgvWorkouts.RowHeadersWidth = 20;
+            dgvWorkouts.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
             LoadWorkouts();
         }
 
@@ -35,10 +91,27 @@ namespace McIntyresFitnessApp.Forms
         {
             DatabaseHelper db = new DatabaseHelper();
             int userId = UserSession.UserId;
-
             DataTable data = db.GetWorkouts(userId);
-
             dgvWorkouts.DataSource = data;
+        }
+
+        /// <summary>
+        /// Filters workouts by the selected date range.
+        /// </summary>
+        private void btnFilter_Click(object sender, EventArgs e)
+        {
+            DatabaseHelper db = new DatabaseHelper();
+            int userId = UserSession.UserId;
+            DataTable data = db.GetWorkoutsByDate(userId, dtpStartDate.Value.Date, dtpEndDate.Value.Date);
+            dgvWorkouts.DataSource = data;
+        }
+
+        /// <summary>
+        /// Clears the date filter and reloads all workouts.
+        /// </summary>
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            LoadWorkouts();
         }
 
         /// <summary>
@@ -90,7 +163,6 @@ namespace McIntyresFitnessApp.Forms
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dgvWorkouts.Rows[e.RowIndex];
-
                 selectedWorkoutId = Convert.ToInt32(row.Cells["WorkoutID"].Value);
             }
         }
@@ -107,23 +179,14 @@ namespace McIntyresFitnessApp.Forms
             }
 
             DataGridViewRow row = dgvWorkouts.SelectedRows[0];
-
             int workoutId = Convert.ToInt32(row.Cells["WorkoutID"].Value);
             string exercise = row.Cells["ExerciseName"].Value.ToString();
             int sets = Convert.ToInt32(row.Cells["Sets"].Value);
             int reps = Convert.ToInt32(row.Cells["Reps"].Value);
             decimal weight = Convert.ToDecimal(row.Cells["Weight"].Value);
 
-            WorkoutEditForm form = new WorkoutEditForm(
-                workoutId,
-                exercise,
-                sets,
-                reps,
-                weight
-            );
-
+            WorkoutEditForm form = new WorkoutEditForm(workoutId, exercise, sets, reps, weight);
             form.ShowDialog();
-
             LoadWorkouts();
         }
     }

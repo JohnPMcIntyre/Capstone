@@ -121,6 +121,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "RegisterForm";
             Text = "RegisterForm";
+            this.Load += new EventHandler(this.RegisterForm_Load);
             ResumeLayout(false);
             PerformLayout();
         }
