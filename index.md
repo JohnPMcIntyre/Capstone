@@ -117,8 +117,8 @@ public DataTable GetWorkoutsForChart(int userId)
 
 ## Project Demo
 
-[Loom Video Demo 1](https://www.loom.com/share/a4320331fa7d431b912defde0fae3d03)
-[Loom Video Demo 2](https://www.loom.com/share/f49a0c1e7e2b48808c1d3b3a49408032)
+[Loom Video Demo 1](https://www.loom.com/share/01a439cf9dd94f9f95163baffb958da3)
+[Loom Video Demo 2](https://www.loom.com/share/b2dd10e75a844777a62eae36775ddc27)
 
 ---
 
