@@ -121,5 +121,42 @@ public DataTable GetWorkoutsForChart(int userId)
 [Loom Video Demo 2](https://www.loom.com/share/f49a0c1e7e2b48808c1d3b3a49408032)
 
 ---
+## Design Diagrams
+
+### Application Architecture
+![Flowchart](Flowchart.png)
+
+### User Flow
+![Sitemap](Sitemap.png)
+
+---
+## UI Wireframes (CST-451 Design Phase)
+
+### Login
+![Login](Login.png)
+
+### Register
+![Register](Register.png)
+
+### Log Workout
+![Log Workout](LogWorkout.png)
+
+### Edit/Delete Workout
+![Edit Delete](Edit_DeleteWorkout.png)
+
+### Workout History
+![Workout History](WorkoutHistory.png)
+
+### Progress Chart
+![Progress Chart](ProgressChart.png)
+
+---
+## CST-451 vs CST-452 Summary
+
+**CST-451:** Completed project proposal, requirements specification, architecture design including ER diagrams, sequence diagrams, database schema, and first code iteration with basic CRUD operations.
+
+**CST-452:** Added password hashing, logout, delete confirmation, date filter, UI redesign across all forms, progress chart with line graph, and motivational messages on the dashboard.
+
+---
 
 *Grand Canyon University | College of Engineering and Technology | 2026*
