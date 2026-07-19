@@ -80,6 +80,7 @@ namespace McIntyresFitnessApp.Forms
             dgvWorkouts.RowHeadersVisible = true;
             dgvWorkouts.RowHeadersWidth = 20;
             dgvWorkouts.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            lblMcIntyre.Visible = false;
 
             LoadWorkouts();
         }

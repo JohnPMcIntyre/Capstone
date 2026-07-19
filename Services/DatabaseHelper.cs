@@ -245,5 +245,33 @@ namespace McIntyresFitnessApp.Services
                 }
             }
         }
+
+        /// <summary>
+        /// Retrieves all workouts for a given user ordered oldest to newest for charting.
+        /// </summary>
+        public DataTable GetWorkoutsForChart(int userId)
+        {
+            using (MySqlConnection conn = GetConnection())
+            {
+                conn.Open();
+
+                string query = @"SELECT WorkoutID, ExerciseName, Sets, Reps, Weight, WorkoutDate
+                         FROM Workouts
+                         WHERE UserID = @userId
+                         ORDER BY WorkoutDate ASC";
+
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@userId", userId);
+
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd))
+                    {
+                        DataTable table = new DataTable();
+                        adapter.Fill(table);
+                        return table;
+                    }
+                }
+            }
+        }
     }
 }

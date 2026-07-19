@@ -45,6 +45,21 @@ namespace McIntyresFitnessApp.Forms
             lblTotalWeight.Text = "Total Weight Lifted: " + db.GetTotalWeightLifted(userId) + " lbs";
             lblMaxWeight.Text = "Heaviest Lift: " + db.GetMaxWeight(userId) + " lbs";
             lblFavoriteExercise.Text = "Favorite Exercise: " + db.GetFavoriteExercise(userId);
+
+            btnBack.BackColor = Color.FromArgb(180, 40, 40);
+            btnBack.ForeColor = Color.White;
+            btnBack.FlatStyle = FlatStyle.Flat;
+            btnBack.FlatAppearance.BorderSize = 0;
+            btnBack.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            btnBack.Cursor = Cursors.Hand;
+        }
+
+        /// <summary>
+        /// Closes the progress form.
+        /// </summary>
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

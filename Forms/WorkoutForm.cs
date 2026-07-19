@@ -49,6 +49,11 @@ namespace McIntyresFitnessApp.Forms
             btnBack.FlatAppearance.BorderSize = 0;
             btnBack.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             btnBack.Cursor = Cursors.Hand;
+            numWeight.Maximum = 9999;
+            numSets.Maximum = 100;
+            numReps.Maximum = 100;
+            btnSaveWorkout.Size = new Size(220, 45);
+            btnBack.Size = new Size(120, 45);
         }
 
         /// <summary>

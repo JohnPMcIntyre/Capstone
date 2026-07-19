@@ -105,6 +105,15 @@
             Name = "ProgressForm";
             Text = "ProgressForm";
             Load += ProgressForm_Load;
+            btnBack = new Button();
+            btnBack.Name = "btnBack";
+            btnBack.Text = "Back";
+            btnBack.Size = new Size(120, 40);
+            btnBack.Location = new Point(400, 520);
+            btnBack.TabIndex = 8;
+            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
+            Controls.Add(btnBack);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -117,5 +126,6 @@
         private Label lblMaxWeight;
         private MySql.Data.MySqlClient.MySqlCommand mySqlCommand1;
         private Label lblMcIntyre;
+        private Button btnBack;
     }
 }

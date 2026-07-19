@@ -89,6 +89,8 @@ namespace McIntyresFitnessApp.Forms
             btnBack.FlatAppearance.BorderSize = 0;
             btnBack.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             btnBack.Cursor = Cursors.Hand;
+            btnRegister.Location = new Point(130, 220);
+            btnBack.Location = new Point(270, 220);
         }
     }
 }

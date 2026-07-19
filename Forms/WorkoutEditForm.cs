@@ -14,9 +14,10 @@ namespace McIntyresFitnessApp.Forms
         public WorkoutEditForm(int id, string exercise, int sets, int reps, decimal weight)
         {
             InitializeComponent();
-
+            numWeight.Maximum = 9999;
+            numSets.Maximum = 100;
+            numReps.Maximum = 100;
             workoutId = id;
-
             txtExerciseName.Text = exercise;
             numSets.Value = sets;
             numReps.Value = reps;
@@ -68,6 +69,9 @@ namespace McIntyresFitnessApp.Forms
             btnSave.FlatAppearance.BorderSize = 0;
             btnSave.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             btnSave.Cursor = Cursors.Hand;
+            numWeight.Maximum = 9999;
+            numSets.Maximum = 100;
+            numReps.Maximum = 100;
         }
     }
 }

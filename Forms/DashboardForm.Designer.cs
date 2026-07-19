@@ -105,6 +105,27 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "DashboardForm";
             Text = "DashboardForm";
+            //
+            //btnChart
+            //
+            btnChart = new Button();
+            btnChart.Name = "btnChart";
+            btnChart.Text = "Progress Chart";
+            btnChart.TabIndex = 5;
+            btnChart.UseVisualStyleBackColor = true;
+            btnChart.Click += btnChart_Click;
+            Controls.Add(btnChart);
+            //
+            //lblMotivation
+            //
+            lblMotivation = new Label();
+            lblMotivation.Name = "lblMotivation";
+            lblMotivation.AutoSize = false;
+            lblMotivation.Size = new Size(500, 40);
+            lblMotivation.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            lblMotivation.TabIndex = 6;
+            lblMotivation.TextAlign = ContentAlignment.MiddleCenter;
+            Controls.Add(lblMotivation);
             this.Load += new EventHandler(this.DashboardForm_Load);
             ResumeLayout(false);
             PerformLayout();
@@ -117,5 +138,7 @@
         private Button btnProgress;
         private Label lblMcIntyre;
         private Button btnLogout;
+        private Button btnChart;
+        private Label lblMotivation;
     }
 }
