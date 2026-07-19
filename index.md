@@ -121,6 +121,7 @@ public DataTable GetWorkoutsForChart(int userId)
 [Loom Video Demo 2](https://www.loom.com/share/f49a0c1e7e2b48808c1d3b3a49408032)
 
 ---
+
 ## Design Diagrams
 
 ### Application Architecture
@@ -129,7 +130,14 @@ public DataTable GetWorkoutsForChart(int userId)
 ### User Flow
 ![Sitemap](Sitemap.png)
 
+### ER Diagram
+![ER Diagram](ER.png)
+
+### UML Sequence Diagram
+![UML Sequence Diagram](UML.png)
+
 ---
+
 ## UI Wireframes (CST-451 Design Phase)
 
 ### Login
@@ -151,6 +159,7 @@ public DataTable GetWorkoutsForChart(int userId)
 ![Progress Chart](ProgressChart.png)
 
 ---
+
 ## CST-451 vs CST-452 Summary
 
 **CST-451:** Completed project proposal, requirements specification, architecture design including ER diagrams, sequence diagrams, database schema, and first code iteration with basic CRUD operations.
